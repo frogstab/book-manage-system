@@ -19,6 +19,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -47,59 +50,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Test (1).executor": "Run",
-    "Application.Test.executor": "Run",
-    "Maven.Unknown [clean].executor": "Run",
-    "Maven.Unknown [install].executor": "Run",
-    "Maven.class-net [clean].executor": "Run",
-    "Maven.cloud-note [clean].executor": "Run",
-    "Maven.health-api [clean].executor": "Run",
-    "Maven.health-api [install].executor": "Run",
-    "Maven.health-api [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.7:generate].executor": "Run",
-    "Maven.iot-net [clean].executor": "Run",
-    "Maven.iot-net [compile].executor": "Run",
-    "Maven.msdz-api [clean].executor": "Run",
-    "Maven.msdz-api [install].executor": "Run",
-    "Maven.online-test-api [clean].executor": "Run",
-    "Maven.personal-health-api [clean].executor": "Run",
-    "Maven.questionnaire-sys-api [clean].executor": "Run",
-    "Maven.seniors-nursing [clean].executor": "Run",
-    "Maven.seniors-nursing [compile].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.BookManageSysApplication.executor": "Run",
-    "Spring Boot.ClassNetApplication.executor": "Run",
-    "Spring Boot.ClassroomApplication (1).executor": "Run",
-    "Spring Boot.ClassroomApplication.executor": "Run",
-    "Spring Boot.CloudNoteStarter.executor": "Run",
-    "Spring Boot.HospitalManageStarter.executor": "Run",
-    "Spring Boot.IotStarter.executor": "Run",
-    "Spring Boot.OnlineTestApplication.executor": "Run",
-    "Spring Boot.PersonalHealthApplication (1).executor": "Run",
-    "Spring Boot.PersonalHealthApplication.executor": "Run",
-    "Spring Boot.QuestionnaireApplication.executor": "Run",
-    "Spring Boot.SeniorsNursingStarter.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Desktop/项目实战/图书管理系统/脚手架/脚手架/后端/books-manage-sys",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Test (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Unknown [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.class-net [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cloud-note [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.health-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.health-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.health-api [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.7:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.iot-net [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.iot-net [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.msdz-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.msdz-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.online-test-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.personal-health-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.questionnaire-sys-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seniors-nursing [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.seniors-nursing [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.BookManageSysApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ClassNetApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ClassroomApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ClassroomApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CloudNoteStarter.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.HospitalManageStarter.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.IotStarter.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OnlineTestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PersonalHealthApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PersonalHealthApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.QuestionnaireApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SeniorsNursingStarter.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/项目实战/图书管理系统/脚手架/脚手架/后端/books-manage-sys&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\项目\在线考试系统\后端\online-test-api\src\main\resources\mapper" />
@@ -130,6 +136,17 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="BookManageSysApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="BookManageSysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -154,8 +171,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -249,6 +266,8 @@
       <workItem from="1724317623075" duration="1019000" />
       <workItem from="1725436718053" duration="943000" />
       <workItem from="1726739423322" duration="248000" />
+      <workItem from="1764855075420" duration="713000" />
+      <workItem from="1764856103690" duration="16000" />
     </task>
     <servers />
   </component>
