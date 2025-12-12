@@ -4,10 +4,16 @@ import cn.kmbeast.pojo.dto.query.base.QueryDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * 类别的查询条件类
+ */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class BookOrderHistoryQueryDto extends QueryDto {
-    private Integer userId;
-    private Integer bookId;
-    private Boolean isReturn;
+public class CategoryQueryDto extends QueryDto {
+
+    /**
+     * 类别名
+     */
+    private String name;
+
 }
