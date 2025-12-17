@@ -10,7 +10,9 @@ import cn.kmbeast.pojo.vo.BookOrderHistoryVO;
 import java.util.List;
 
 
-//书籍预约历史业务逻辑接口
+/**
+ * 书籍预约历史业务逻辑接口
+ */
 public interface BookOrderHistoryService {
 
     Result<Void> save(BookOrderHistory BookOrderHistory);

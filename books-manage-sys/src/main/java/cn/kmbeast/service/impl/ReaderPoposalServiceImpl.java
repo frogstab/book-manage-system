@@ -1,5 +1,6 @@
 package cn.kmbeast.service.impl;
 
+import cn.kmbeast.context.LocalThreadHolder;
 import cn.kmbeast.mapper.ReaderProposalMapper;
 import cn.kmbeast.pojo.api.ApiResult;
 import cn.kmbeast.pojo.api.PageResult;
@@ -30,6 +31,7 @@ public class ReaderPoposalServiceImpl implements ReaderProposalService {
      */
     @Override
     public Result<Void> save(ReaderProposal readerProposal) {
+        readerProposal.setUserId(LocalThreadHolder.getUserId());
         readerProposal.setCreateTime(LocalDateTime.now());
         readerProposalMapper.save(readerProposal);
         return ApiResult.success();

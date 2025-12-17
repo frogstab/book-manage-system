@@ -13,7 +13,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 
-//图书借阅历史数据的 Controller
+/**
+ * 图书借阅历史数据的 Controller
+ */
 @RestController
 @RequestMapping(value = "/bookOrderHistory")
 public class BookOrderHistoryController {
@@ -61,8 +63,7 @@ public class BookOrderHistoryController {
      */
     @Pager
     @PostMapping(value = "/queryUser")
-    public Result<List<BookOrderHistoryVO>> query() {
-        BookOrderHistoryQueryDto dto = new BookOrderHistoryQueryDto();
+    public Result<List<BookOrderHistoryVO>> queryUser(@RequestBody BookOrderHistoryQueryDto dto) {
         dto.setUserId(LocalThreadHolder.getUserId());
         return bookOrderHistoryService.query(dto);
     }

@@ -5,6 +5,7 @@ import cn.kmbeast.pojo.api.Result;
 import cn.kmbeast.pojo.dto.query.extend.BookQueryDto;
 import cn.kmbeast.pojo.entity.Book;
 import cn.kmbeast.pojo.vo.BookVO;
+import cn.kmbeast.pojo.vo.ChartVO;
 import cn.kmbeast.service.BookService;
 import org.springframework.web.bind.annotation.*;
 
@@ -65,5 +66,17 @@ public class BookController {
     public Result<List<BookVO>> query(@RequestBody BookQueryDto bookQueryDto) {
         return bookService.query(bookQueryDto);
     }
+
+    /**
+     * 统计图书存量数据
+     *
+     * @return Result<List < ChartVO>> 响应结果
+     */
+    @GetMapping(value = "/daysQuery/{day}")
+    @ResponseBody
+    public Result<List<ChartVO>> query(@PathVariable Integer day) {
+        return bookService.daysQuery(day);
+    }
+
 
 }
