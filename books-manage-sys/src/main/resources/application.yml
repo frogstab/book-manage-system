@@ -14,9 +14,9 @@ spring:
       max-request-size: 10MB
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/book-manage-sys?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://36.158.228.122:56285/book0--manage-sys?characterEncoding=utf8&useSSL=false&serverTimezone=GMT
     username: root
-    password: 114514
+    password: 123456
 # 让 Mybatis 在 Mapper目录下找到 XML 映射文件
 mybatis:
   mapper-locations: classpath:mapper/*.xml
