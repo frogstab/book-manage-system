@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55443833-5b94-4b44-845c-99927aa2fe67" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/books-manage-sys/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/BookManageSysApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/Interceptor/JwtInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/aop/Log.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/aop/LogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/aop/Pager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/aop/PagerAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/aop/Protector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/aop/ProtectorAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/config/InterceptorConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/context/LocalThreadHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/BookOrderHistoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/BookRssHistoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/BookSaveController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/BookshelfController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/NoticeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/ReaderProposalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/RssNotificationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/UserOperationLogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/controller/ViewsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/BookMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/BookOrderHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/BookRssHistoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/BookSaveMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/BookShelfMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/NoticeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/ReaderProposalMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/RssNotificationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/mapper/UserOperationLogMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/api/ApiResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/api/PageResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/api/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/api/ResultCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/base/QueryDto$QueryDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/base/QueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/BookOrderHistoryQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/BookQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/BookRssHistoryQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/BookSaveQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/BookshelfQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/CategoryQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/NoticeQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/ReaderProposalQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/RssNotificationQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/UserOperationLogQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/query/extend/UserQueryDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/update/UserLoginDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/update/UserRegisterDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/dto/update/UserUpdateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/AuditStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/IsReadEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/LoginStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/PracticeTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/RoleEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/em/WordStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/BookOrderHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/BookRssHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/BookSave.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/BookShelf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/Notice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/ReaderProposal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/RssNotification$RssNotificationBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/RssNotification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/UserOperationLog$UserOperationLogBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/entity/UserOperationLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/BookOrderHistoryVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/BookRssHistoryVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/BookSaveVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/BookVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/ChartVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/ReaderProposalVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/RssNotificationVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/UserOperationLogVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/pojo/vo/UserVO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/BookOrderHistoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/BookRssHistoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/BookSaveService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/BookshelfService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/NoticeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/ReaderProposalService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/RssNotificationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/UserOperationLogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/ViewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/BookOrderHistoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/BookRssHistoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/BookshelfServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/CategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/NoticeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/ReaderPoposalServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/RssNotificationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/SaveServiceimpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/UserOperationLogServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/service/impl/ViewsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/utils/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/utils/IdFactoryUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/utils/JwtUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/classes/cn/kmbeast/utils/PathUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/books-manage-sys/target/generated-sources/annotations/占位.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="371QvW1KmB0vWi0jS0ZH7nXJzA9" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.book-manage-sys-api [clean].executor": "Run",
+    "Maven.book-manage-sys-api [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="55443833-5b94-4b44-845c-99927aa2fe67" name="更改" comment="" />
+      <created>1766068330703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766068330703</updated>
+      <workItem from="1766068332892" duration="268000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
