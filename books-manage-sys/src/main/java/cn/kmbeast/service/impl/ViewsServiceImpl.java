@@ -1,9 +1,13 @@
 package cn.kmbeast.service.impl;
 
+import cn.kmbeast.mapper.BookMapper;
+import cn.kmbeast.mapper.BookOrderHistoryMapper;
 import cn.kmbeast.mapper.NoticeMapper;
 import cn.kmbeast.mapper.UserMapper;
 import cn.kmbeast.pojo.api.ApiResult;
 import cn.kmbeast.pojo.api.Result;
+import cn.kmbeast.pojo.dto.query.extend.BookOrderHistoryQueryDto;
+import cn.kmbeast.pojo.dto.query.extend.BookQueryDto;
 import cn.kmbeast.pojo.dto.query.extend.NoticeQueryDto;
 import cn.kmbeast.pojo.dto.query.extend.UserQueryDto;
 import cn.kmbeast.pojo.vo.ChartVO;
@@ -24,6 +28,10 @@ public class ViewsServiceImpl implements ViewsService {
     private UserMapper userMapper;
     @Resource
     private NoticeMapper noticeMapper;
+    @Resource
+    private BookMapper bookMapper;
+    @Resource
+    private BookOrderHistoryMapper bookOrderHistoryMapper;
 
     /**
      * 统计一些系统的基础数据
@@ -37,22 +45,18 @@ public class ViewsServiceImpl implements ViewsService {
         UserQueryDto userQueryDto = new UserQueryDto();
         int userCount = userMapper.queryCount(userQueryDto);
         change(userCount, "存量用户（个）", chartVOS);
-//        // 2. 试卷数
-//        PaperQueryDto paperQueryDto = new PaperQueryDto();
-//        int paperCount = paperMapper.queryCount(paperQueryDto);
-//        change(paperCount, "存量试卷（张）", chartVOS);
-//        // 3. 题目
-//        PracticeQueryDto practiceQueryDto = new PracticeQueryDto();
-//        int practiceCount = practiceMapper.queryCount(practiceQueryDto);
-//        change(practiceCount, "收录题目（道）", chartVOS);
-//        // 4. 评论
-//        EvaluationsQueryDto evaluationsQueryDto = new EvaluationsQueryDto();
-//        int evaluationCount = evaluationsMapper.queryCount(evaluationsQueryDto);
-//        change(evaluationCount, "评论（条）", chartVOS);
-        // 5. 公告
+        // 2. 公告
         NoticeQueryDto noticeQueryDto = new NoticeQueryDto();
         int noticeCount = noticeMapper.queryCount(noticeQueryDto);
         change(noticeCount, "公告（篇）", chartVOS);
+        // 3. 收录图书
+        BookQueryDto bookQueryDto = new BookQueryDto();
+        int bookCount = bookMapper.queryCount(bookQueryDto);
+        change(bookCount, "收录图书", chartVOS);
+        // 4. 借阅记录
+        BookOrderHistoryQueryDto bookOrderHistoryQueryDto = new BookOrderHistoryQueryDto();
+        int bookOrderHistoryCount = bookOrderHistoryMapper.queryCount(bookOrderHistoryQueryDto);
+        change(bookOrderHistoryCount, "借阅记录", chartVOS);
         return ApiResult.success(chartVOS);
     }
 

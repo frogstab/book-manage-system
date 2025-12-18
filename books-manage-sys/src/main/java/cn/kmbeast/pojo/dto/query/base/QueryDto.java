@@ -14,6 +14,10 @@ import java.time.LocalDateTime;
 @Builder
 public class QueryDto {
     /**
+     * ID
+     */
+    private Integer id;
+    /**
      * 当前页
      */
     private Integer current;

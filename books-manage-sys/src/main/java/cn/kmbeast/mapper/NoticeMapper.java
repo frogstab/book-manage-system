@@ -1,10 +1,7 @@
 package cn.kmbeast.mapper;
 
 import cn.kmbeast.pojo.dto.query.extend.NoticeQueryDto;
-import cn.kmbeast.pojo.dto.query.extend.TestHistoryQueryDto;
 import cn.kmbeast.pojo.entity.Notice;
-import cn.kmbeast.pojo.entity.TestHistory;
-import cn.kmbeast.pojo.vo.TestHistoryVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

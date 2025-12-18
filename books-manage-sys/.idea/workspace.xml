@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6adcc8cf-9a0b-4afe-a9c6-9defa3dec39b" name="Default Changelist" comment="" />
+    <list default="true" id="6adcc8cf-9a0b-4afe-a9c6-9defa3dec39b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/impl/BookshelfServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kmbeast/controller/BookshelfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kmbeast/controller/BookshelfController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kmbeast/pojo/dto/query/extend/BookQueryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kmbeast/pojo/dto/query/extend/BookQueryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/BookSelfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/BookshelfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kmbeast/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kmbeast/controller/BookshelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kmbeast/controller/BookshelfController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kmbeast/pojo/dto/query/extend/BookQueryDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kmbeast/pojo/dto/query/extend/BookQueryDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kmbeast/service/BookSelfService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kmbeast/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kmbeast/service/impl/BookServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +57,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -50,62 +68,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Test (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Unknown [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.class-net [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cloud-note [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.health-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.health-api [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.health-api [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.7:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.iot-net [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.iot-net [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.msdz-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.msdz-api [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.online-test-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.personal-health-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.questionnaire-sys-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.seniors-nursing [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.seniors-nursing [compile].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BookManageSysApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ClassNetApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ClassroomApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ClassroomApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CloudNoteStarter.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.HospitalManageStarter.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.IotStarter.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OnlineTestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PersonalHealthApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PersonalHealthApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.QuestionnaireApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SeniorsNursingStarter.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/项目实战/图书管理系统/脚手架/脚手架/后端/books-manage-sys&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test (1).executor": "Run",
+    "Application.Test.executor": "Run",
+    "Maven.Unknown [clean].executor": "Run",
+    "Maven.Unknown [install].executor": "Run",
+    "Maven.class-net [clean].executor": "Run",
+    "Maven.cloud-note [clean].executor": "Run",
+    "Maven.health-api [clean].executor": "Run",
+    "Maven.health-api [install].executor": "Run",
+    "Maven.health-api [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.7:generate].executor": "Run",
+    "Maven.iot-net [clean].executor": "Run",
+    "Maven.iot-net [compile].executor": "Run",
+    "Maven.msdz-api [clean].executor": "Run",
+    "Maven.msdz-api [install].executor": "Run",
+    "Maven.online-test-api [clean].executor": "Run",
+    "Maven.personal-health-api [clean].executor": "Run",
+    "Maven.questionnaire-sys-api [clean].executor": "Run",
+    "Maven.seniors-nursing [clean].executor": "Run",
+    "Maven.seniors-nursing [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BookManageSysApplication.executor": "Run",
+    "Spring Boot.ClassNetApplication.executor": "Run",
+    "Spring Boot.ClassroomApplication (1).executor": "Run",
+    "Spring Boot.ClassroomApplication.executor": "Run",
+    "Spring Boot.CloudNoteStarter.executor": "Run",
+    "Spring Boot.HospitalManageStarter.executor": "Run",
+    "Spring Boot.IotStarter.executor": "Run",
+    "Spring Boot.OnlineTestApplication.executor": "Run",
+    "Spring Boot.PersonalHealthApplication (1).executor": "Run",
+    "Spring Boot.PersonalHealthApplication.executor": "Run",
+    "Spring Boot.QuestionnaireApplication.executor": "Run",
+    "Spring Boot.SeniorsNursingStarter.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Desktop/项目实战/图书管理系统/脚手架/脚手架/后端/books-manage-sys",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\项目\在线考试系统\后端\online-test-api\src\main\resources\mapper" />
@@ -268,6 +286,10 @@
       <workItem from="1726739423322" duration="248000" />
       <workItem from="1764855075420" duration="713000" />
       <workItem from="1764856103690" duration="16000" />
+      <workItem from="1765964821400" duration="150000" />
+      <workItem from="1766029276361" duration="548000" />
+      <workItem from="1766035386849" duration="2163000" />
+      <workItem from="1766037853305" duration="2217000" />
     </task>
     <servers />
   </component>
