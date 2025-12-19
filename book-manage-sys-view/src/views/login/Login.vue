@@ -47,6 +47,7 @@
                 placeholder="请输入管理员账号"
                 class="form-input"
                 required
+                autofocus
               />
             </div>
             
@@ -62,17 +63,34 @@
               />
             </div>
             
+            <!-- 角色选择 -->
+            <div class="form-group">
+              <label class="form-label">登录身份</label>
+              <div class="role-select">
+                <el-radio-group v-model="loginForm.role" size="medium">
+                  <el-radio :label="1" border>管理员</el-radio>
+                  <el-radio :label="2" border>普通用户</el-radio>
+                </el-radio-group>
+              </div>
+            </div>
+            
+            <!-- 错误提示 -->
+            <div v-if="errorMessage" class="error-message">
+              {{ errorMessage }}
+            </div>
+            
             <button
               type="submit"
               class="login-btn"
               :disabled="loading"
             >
+              <span v-if="loading" class="loading-spinner"></span>
               {{ loading ? '登录中...' : '登录系统' }}
             </button>
             
             <div class="register-link">
               没有账户？
-              <a href="#" @click.prevent="goToRegister" class="register-text">立即注册</a>
+              <router-link to="/register" class="register-text">立即注册</router-link>
             </div>
           </form>
           
@@ -87,48 +105,119 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
-import { useRouter } from 'vue-router'
+import { ref, reactive, onMounted } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
+import { setToken, setRole } from '@/utils/storage.js'
+import { ElMessage } from 'element-ui'
 
 const router = useRouter()
+const route = useRoute()
 
 const loginForm = reactive({
   username: '',
-  password: ''
+  password: '',
+  role: 1 // 默认管理员
 })
 
 const loading = ref(false)
+const errorMessage = ref('')
+
+// 模拟用户数据（实际应该调用API）
+const mockUsers = [
+  { username: 'admin', password: 'admin123', role: 1, name: '系统管理员' },
+  { username: 'user1', password: 'user123', role: 2, name: '普通用户' },
+  { username: 'zhangsan', password: '123456', role: 1, name: '张三' },
+  { username: 'lisi', password: '123456', role: 2, name: '李四' }
+]
 
 const handleLogin = async () => {
-  if (!loginForm.username.trim() || !loginForm.password.trim()) {
-    alert('请填写用户名和密码')
+  // 重置错误信息
+  errorMessage.value = ''
+  
+  // 表单验证
+  if (!loginForm.username.trim()) {
+    errorMessage.value = '请输入用户名'
+    return
+  }
+  
+  if (!loginForm.password.trim()) {
+    errorMessage.value = '请输入密码'
     return
   }
   
   loading.value = true
   
   try {
-    // 模拟API调用
+    // 模拟API调用延迟
     await new Promise(resolve => setTimeout(resolve, 800))
     
-    // 存储token并跳转到首页
-    localStorage.setItem('token', 'mock-admin-token')
-    localStorage.setItem('user', loginForm.username)
+    // 模拟用户验证（实际项目中应该调用后端API）
+    const user = mockUsers.find(u => 
+      u.username === loginForm.username && 
+      u.password === loginForm.password
+    )
     
-    // 跳转到首页
-    router.push('/home')
+    if (user) {
+      // 检查角色是否匹配
+      if (user.role !== loginForm.role) {
+        errorMessage.value = '请选择正确的登录身份'
+        return
+      }
+      
+      // 存储用户信息
+      setToken('mock-token-' + Date.now())
+      setRole(user.role)
+      sessionStorage.setItem('userName', user.name)
+      sessionStorage.setItem('userId', user.username)
+      
+      // 清除错误信息
+      errorMessage.value = ''
+      
+      ElMessage.success({
+        message: `登录成功！欢迎 ${user.name}`,
+        duration: 2000
+      })
+      
+      // 根据角色跳转到不同页面
+      const redirectPath = route.query.redirect || (user.role === 1 ? '/admin/adminLayout' : '/user/main')
+      
+      setTimeout(() => {
+        router.push(redirectPath)
+      }, 1000)
+      
+    } else {
+      // 验证失败
+      errorMessage.value = '用户名或密码错误'
+      loginForm.password = ''
+    }
+    
   } catch (error) {
-    alert('登录失败：' + error.message)
+    console.error('登录错误:', error)
+    errorMessage.value = '登录失败，请检查网络连接'
   } finally {
     loading.value = false
   }
 }
 
-const goToRegister = () => {
-  // 这里可以跳转到注册页面
-  alert('跳转到注册页面')
-  // router.push('/register')
-}
+// 自动聚焦到用户名输入框
+onMounted(() => {
+  // 如果已经登录，根据角色跳转到对应页面
+  const token = sessionStorage.getItem('token')
+  if (token) {
+    const role = sessionStorage.getItem('role')
+    if (role === '1') {
+      router.push('/admin/adminLayout')
+    } else if (role === '2') {
+      router.push('/user/main')
+    }
+  }
+  
+  // 自动聚焦
+  setTimeout(() => {
+    const usernameInput = document.querySelector('input[type="text"]')
+    if (usernameInput) usernameInput.focus()
+  }, 100)
+})
 </script>
 
 <style scoped>
@@ -136,13 +225,16 @@ const goToRegister = () => {
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-wrapper {
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  min-height: 600px;
   display: flex;
-  min-height: calc(100vh - 80px);
   background: white;
   border-radius: 20px;
   overflow: hidden;
@@ -152,15 +244,18 @@ const goToRegister = () => {
 /* 左侧区域 */
 .feature-section {
   flex: 1;
-  padding: 60px 40px;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 60px 50px;
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .welcome-title {
   font-size: 32px;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
 }
 
@@ -174,6 +269,7 @@ const goToRegister = () => {
 .feature-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .feature-item {
@@ -195,11 +291,11 @@ const goToRegister = () => {
 /* 右侧区域 */
 .login-section {
   flex: 0 0 500px;
+  padding: 40px;
+  background: #f8f9fa;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-  background: #f8f9fa;
 }
 
 .login-card {
@@ -215,14 +311,14 @@ const goToRegister = () => {
   text-align: center;
   color: #333;
   font-size: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 600;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .form-group {
@@ -240,8 +336,8 @@ const goToRegister = () => {
 .form-input {
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
   font-size: 16px;
   box-sizing: border-box;
   transition: all 0.3s;
@@ -250,32 +346,61 @@ const goToRegister = () => {
 
 .form-input:focus {
   outline: none;
-  border-color: #6a11cb;
+  border-color: #409EFF;
   background: white;
-  box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+  box-shadow: 0 0 0 3px rgba(64, 158, 255, 0.1);
 }
 
 .form-input::placeholder {
   color: #999;
 }
 
+.role-select {
+  padding: 10px 0;
+}
+
+.role-select .el-radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.role-select .el-radio {
+  flex: 1;
+  margin: 0;
+}
+
+.error-message {
+  color: #F56C6C;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  background: #fef0f0;
+  border-radius: 6px;
+  margin: 5px 0;
+}
+
 .login-btn {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background: linear-gradient(to right, #409EFF, #337ecc);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
   margin-top: 10px;
+  position: relative;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-btn:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+  box-shadow: 0 8px 20px rgba(64, 158, 255, 0.3);
 }
 
 .login-btn:active:not(:disabled) {
@@ -283,8 +408,22 @@ const goToRegister = () => {
 }
 
 .login-btn:disabled {
-  opacity: 0.6;
+  opacity: 0.7;
   cursor: not-allowed;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .register-link {
@@ -295,7 +434,7 @@ const goToRegister = () => {
 }
 
 .register-text {
-  color: #6a11cb;
+  color: #409EFF;
   text-decoration: none;
   font-weight: 500;
   margin-left: 5px;
@@ -304,13 +443,13 @@ const goToRegister = () => {
 }
 
 .register-text:hover {
-  color: #2575fc;
+  color: #337ecc;
   text-decoration: underline;
 }
 
 .copyright {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid #eee;
   color: #888;
@@ -323,6 +462,7 @@ const goToRegister = () => {
   .login-wrapper {
     flex-direction: column;
     max-width: 600px;
+    min-height: auto;
   }
   
   .feature-section {
@@ -331,6 +471,7 @@ const goToRegister = () => {
   
   .login-section {
     flex: none;
+    width: 100%;
     padding: 30px;
   }
 }
@@ -338,6 +479,10 @@ const goToRegister = () => {
 @media (max-width: 480px) {
   .login-container {
     padding: 20px;
+  }
+  
+  .login-wrapper {
+    border-radius: 15px;
   }
   
   .welcome-title {
@@ -350,6 +495,15 @@ const goToRegister = () => {
   
   .login-card {
     padding: 30px 20px;
+    box-shadow: none;
+  }
+  
+  .feature-section {
+    padding: 30px 20px;
+  }
+  
+  .role-select .el-radio-group {
+    flex-direction: column;
   }
 }
 </style>

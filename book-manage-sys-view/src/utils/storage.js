@@ -1,29 +1,41 @@
-const TOKEN_KEY="token"
-const INFO = "health-info";
-const ACTIVE_PATH="active_key"
-export function getToken(){
-    return sessionStorage.getItem(TOKEN_KEY);
+// Token管理
+export const setToken = (token) => {
+  sessionStorage.setItem('token', token)
 }
 
-export function setToken(token){
-    sessionStorage.setItem(TOKEN_KEY,token);
+export const getToken = () => {
+  return sessionStorage.getItem('token')
 }
 
-export function getHealthInfo(){
-    return sessionStorage.getItem(INFO);
+export const removeToken = () => {
+  sessionStorage.removeItem('token')
 }
 
-export function setHealthInfo(obj){
-    sessionStorage.setItem(INFO,obj);
+export const clearToken = () => {
+  sessionStorage.removeItem('token')
+  sessionStorage.removeItem('role')
+  sessionStorage.removeItem('userName')
+  sessionStorage.removeItem('userId')
 }
 
-export function clearToken(){
-    sessionStorage.clear();
-}
-export function getActivePath(){
-    return sessionStorage.getItem(ACTIVE_PATH);
+// 角色管理
+export const setRole = (role) => {
+  sessionStorage.setItem('role', role.toString())
 }
 
-export function setActivePath(path){
-    sessionStorage.setItem(ACTIVE_PATH, path);
+export const getRole = () => {
+  return sessionStorage.getItem('role')
+}
+
+// 用户信息管理
+export const setUserInfo = (userInfo) => {
+  sessionStorage.setItem('userName', userInfo.name || '')
+  sessionStorage.setItem('userId', userInfo.id || '')
+}
+
+export const getUserInfo = () => {
+  return {
+    name: sessionStorage.getItem('userName'),
+    id: sessionStorage.getItem('userId')
+  }
 }
