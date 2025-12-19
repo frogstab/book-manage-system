@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import { getToken, clearToken } from "@/utils/storage.js"; // 确保导入clearToken
+import { getToken } from "@/utils/storage.js";
 import echarts from 'echarts';
 Vue.prototype.$echarts = echarts;
 Vue.use(ElementUI);
@@ -37,7 +37,6 @@ const router = new VueRouter({
   routes,
   mode: 'history'
 });
-
 router.beforeEach((to, from, next) => {
   // 放行登录页和注册页
   if (to.path === '/login' || to.path === '/register') {
@@ -75,7 +74,6 @@ router.beforeEach((to, from, next) => {
       return next();
     } catch (error) {
       console.error('权限检查失败:', error);
-      clearToken();
       return next('/login');
     }
   }
@@ -83,5 +81,4 @@ router.beforeEach((to, from, next) => {
   // 普通页面直接放行
   next();
 });
-
 export default router;
